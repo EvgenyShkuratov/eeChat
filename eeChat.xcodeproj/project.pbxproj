@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		445EAEB21DF8E67300055615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEB11DF8E67300055615 /* AppDelegate.swift */; };
-		445EAEB41DF8E67300055615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEB31DF8E67300055615 /* ViewController.swift */; };
+		445EAEB41DF8E67300055615 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEB31DF8E67300055615 /* CameraVC.swift */; };
 		445EAEB71DF8E67300055615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445EAEB51DF8E67300055615 /* Main.storyboard */; };
 		445EAEB91DF8E67300055615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445EAEB81DF8E67300055615 /* Assets.xcassets */; };
 		445EAEBC1DF8E67300055615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445EAEBA1DF8E67300055615 /* LaunchScreen.storyboard */; };
+		445EAED41DF8EC9600055615 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */; };
+		445EAED51DF8EC9600055615 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EAED31DF8EC9600055615 /* AAPLPreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		445EAEAE1DF8E67300055615 /* eeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445EAEB11DF8E67300055615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		445EAEB31DF8E67300055615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		445EAEB31DF8E67300055615 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		445EAEB61DF8E67300055615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		445EAEB81DF8E67300055615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445EAEBB1DF8E67300055615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445EAEBD1DF8E67300055615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445EAEC51DF8E6FD00055615 /* eeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eeChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		445EAECF1DF8EC9600055615 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		445EAED01DF8EC9600055615 /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
+		445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
+		445EAED21DF8EC9600055615 /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		445EAED31DF8EC9600055615 /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,44 @@
 		445EAEB01DF8E67300055615 /* eeChat */ = {
 			isa = PBXGroup;
 			children = (
-				445EAEB11DF8E67300055615 /* AppDelegate.swift */,
-				445EAEB31DF8E67300055615 /* ViewController.swift */,
+				445EAED61DF8ED1F00055615 /* Protocols */,
+				445EAEC31DF8E69C00055615 /* Controller */,
 				445EAEB51DF8E67300055615 /* Main.storyboard */,
 				445EAEB81DF8E67300055615 /* Assets.xcassets */,
 				445EAEBA1DF8E67300055615 /* LaunchScreen.storyboard */,
 				445EAEBD1DF8E67300055615 /* Info.plist */,
+				445EAEC51DF8E6FD00055615 /* eeChat-Bridging-Header.h */,
 			);
 			path = eeChat;
+			sourceTree = "<group>";
+		};
+		445EAEC31DF8E69C00055615 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				445EAEB31DF8E67300055615 /* CameraVC.swift */,
+				445EAED01DF8EC9600055615 /* AAPLCameraViewController.h */,
+				445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */,
+				445EAEC41DF8E6A400055615 /* View */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		445EAEC41DF8E6A400055615 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				445EAED21DF8EC9600055615 /* AAPLPreviewView.h */,
+				445EAED31DF8EC9600055615 /* AAPLPreviewView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		445EAED61DF8ED1F00055615 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				445EAEB11DF8E67300055615 /* AppDelegate.swift */,
+				445EAECF1DF8EC9600055615 /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +135,7 @@
 					445EAEAD1DF8E67300055615 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6M25Y2RLSL;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445EAEB41DF8E67300055615 /* ViewController.swift in Sources */,
+				445EAEB41DF8E67300055615 /* CameraVC.swift in Sources */,
 				445EAEB21DF8E67300055615 /* AppDelegate.swift in Sources */,
+				445EAED51DF8EC9600055615 /* AAPLPreviewView.m in Sources */,
+				445EAED41DF8EC9600055615 /* AAPLCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6M25Y2RLSL;
 				INFOPLIST_FILE = eeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeboxapps.eeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eeChat/eeChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +318,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6M25Y2RLSL;
 				INFOPLIST_FILE = eeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeboxapps.eeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eeChat/eeChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
