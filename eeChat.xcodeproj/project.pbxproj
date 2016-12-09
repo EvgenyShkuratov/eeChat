@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1450DD0044E366AF3357B219 /* Pods_eeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7670F6830888DD9217FA4E9D /* Pods_eeChat.framework */; };
 		445EAEB21DF8E67300055615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEB11DF8E67300055615 /* AppDelegate.swift */; };
 		445EAEB41DF8E67300055615 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEB31DF8E67300055615 /* CameraVC.swift */; };
 		445EAEB71DF8E67300055615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445EAEB51DF8E67300055615 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		445EAEBC1DF8E67300055615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445EAEBA1DF8E67300055615 /* LaunchScreen.storyboard */; };
 		445EAED41DF8EC9600055615 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */; };
 		445EAED51DF8EC9600055615 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445EAED31DF8EC9600055615 /* AAPLPreviewView.m */; };
+		445EAED81DFA37D700055615 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445EAED71DFA37D700055615 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
 		445EAED21DF8EC9600055615 /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
 		445EAED31DF8EC9600055615 /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		445EAED71DFA37D700055615 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7670F6830888DD9217FA4E9D /* Pods_eeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8326217429E0EE42EDBA51AF /* Pods-eeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D9EC66E23C94A9E22DC4BF64 /* Pods-eeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1450DD0044E366AF3357B219 /* Pods_eeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C008F439932130DDAEAA0EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8326217429E0EE42EDBA51AF /* Pods-eeChat.debug.xcconfig */,
+				D9EC66E23C94A9E22DC4BF64 /* Pods-eeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		445EAEA51DF8E67300055615 = {
 			isa = PBXGroup;
 			children = (
 				445EAEB01DF8E67300055615 /* eeChat */,
 				445EAEAF1DF8E67300055615 /* Products */,
+				0C008F439932130DDAEAA0EB /* Pods */,
+				E5DE04BB79E83EB572CA50B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,7 @@
 				445EAEB51DF8E67300055615 /* Main.storyboard */,
 				445EAEB81DF8E67300055615 /* Assets.xcassets */,
 				445EAEBA1DF8E67300055615 /* LaunchScreen.storyboard */,
+				445EAED71DFA37D700055615 /* GoogleService-Info.plist */,
 				445EAEBD1DF8E67300055615 /* Info.plist */,
 				445EAEC51DF8E6FD00055615 /* eeChat-Bridging-Header.h */,
 			);
@@ -102,6 +121,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		E5DE04BB79E83EB572CA50B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7670F6830888DD9217FA4E9D /* Pods_eeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 445EAEC01DF8E67300055615 /* Build configuration list for PBXNativeTarget "eeChat" */;
 			buildPhases = (
+				07BD75970E8409AE6A0A3EE4 /* [CP] Check Pods Manifest.lock */,
 				445EAEAA1DF8E67300055615 /* Sources */,
 				445EAEAB1DF8E67300055615 /* Frameworks */,
 				445EAEAC1DF8E67300055615 /* Resources */,
+				A16601FC44FBA5EAD35E18D2 /* [CP] Embed Pods Frameworks */,
+				3D91E887F26ED4DF4CB49F43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,12 +194,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				445EAEBC1DF8E67300055615 /* LaunchScreen.storyboard in Resources */,
+				445EAED81DFA37D700055615 /* GoogleService-Info.plist in Resources */,
 				445EAEB91DF8E67300055615 /* Assets.xcassets in Resources */,
 				445EAEB71DF8E67300055615 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07BD75970E8409AE6A0A3EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D91E887F26ED4DF4CB49F43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eeChat/Pods-eeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A16601FC44FBA5EAD35E18D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eeChat/Pods-eeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		445EAEAA1DF8E67300055615 /* Sources */ = {
@@ -300,6 +379,7 @@
 		};
 		445EAEC11DF8E67300055615 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8326217429E0EE42EDBA51AF /* Pods-eeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -316,6 +396,7 @@
 		};
 		445EAEC21DF8E67300055615 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EC66E23C94A9E22DC4BF64 /* Pods-eeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
