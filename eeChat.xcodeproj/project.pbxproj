@@ -18,6 +18,7 @@
 		445EAED81DFA37D700055615 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445EAED71DFA37D700055615 /* GoogleService-Info.plist */; };
 		445EAEDA1DFA666400055615 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAED91DFA666400055615 /* RoundTextField.swift */; };
 		445EAEDC1DFA6F7900055615 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEDB1DFA6F7900055615 /* RoundButton.swift */; };
+		445EAEDE1DFA7F1800055615 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEDD1DFA7F1800055615 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		445EAED71DFA37D700055615 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		445EAED91DFA666400055615 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		445EAEDB1DFA6F7900055615 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		445EAEDD1DFA7F1800055615 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7670F6830888DD9217FA4E9D /* Pods_eeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8326217429E0EE42EDBA51AF /* Pods-eeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EC66E23C94A9E22DC4BF64 /* Pods-eeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				445EAEB31DF8E67300055615 /* CameraVC.swift */,
+				445EAEDD1DFA7F1800055615 /* LoginVC.swift */,
 				445EAED01DF8EC9600055615 /* AAPLCameraViewController.h */,
 				445EAED11DF8EC9600055615 /* AAPLCameraViewController.m */,
 				445EAEC41DF8E6A400055615 /* View */,
@@ -263,6 +266,7 @@
 			files = (
 				445EAEDC1DFA6F7900055615 /* RoundButton.swift in Sources */,
 				445EAEB41DF8E67300055615 /* CameraVC.swift in Sources */,
+				445EAEDE1DFA7F1800055615 /* LoginVC.swift in Sources */,
 				445EAEB21DF8E67300055615 /* AppDelegate.swift in Sources */,
 				445EAEDA1DFA666400055615 /* RoundTextField.swift in Sources */,
 				445EAED51DF8EC9600055615 /* AAPLPreviewView.m in Sources */,

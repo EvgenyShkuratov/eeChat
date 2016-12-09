@@ -8,4 +8,5 @@ target 'eeChat' do
   # Pods for eeChat
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
 end
