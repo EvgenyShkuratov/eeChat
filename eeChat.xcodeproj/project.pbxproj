@@ -21,6 +21,9 @@
 		445EAEDE1DFA7F1800055615 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEDD1DFA7F1800055615 /* LoginVC.swift */; };
 		445EAEE11DFAB9D300055615 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEE01DFAB9D300055615 /* AuthService.swift */; };
 		445EAEE41DFBCCC200055615 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEE31DFBCCC200055615 /* DataService.swift */; };
+		445EAEE61DFD1DE400055615 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEE51DFD1DE400055615 /* UsersVC.swift */; };
+		445EAEE81DFD1F6100055615 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEE71DFD1F6100055615 /* UserCell.swift */; };
+		445EAEEB1DFD256C00055615 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EAEEA1DFD256C00055615 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		445EAEDD1DFA7F1800055615 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		445EAEE01DFAB9D300055615 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		445EAEE31DFBCCC200055615 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		445EAEE51DFD1DE400055615 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		445EAEE71DFD1F6100055615 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		445EAEEA1DFD256C00055615 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7670F6830888DD9217FA4E9D /* Pods_eeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8326217429E0EE42EDBA51AF /* Pods-eeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EC66E23C94A9E22DC4BF64 /* Pods-eeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eeChat/Pods-eeChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		445EAEB01DF8E67300055615 /* eeChat */ = {
 			isa = PBXGroup;
 			children = (
+				445EAEE91DFD255E00055615 /* Model */,
 				445EAEDF1DFAB9C000055615 /* Services */,
 				445EAED61DF8ED1F00055615 /* Protocols */,
 				445EAEC31DF8E69C00055615 /* Controller */,
@@ -106,6 +113,7 @@
 		445EAEC31DF8E69C00055615 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				445EAEE51DFD1DE400055615 /* UsersVC.swift */,
 				445EAEB31DF8E67300055615 /* CameraVC.swift */,
 				445EAEDD1DFA7F1800055615 /* LoginVC.swift */,
 				445EAED01DF8EC9600055615 /* AAPLCameraViewController.h */,
@@ -122,6 +130,7 @@
 				445EAED31DF8EC9600055615 /* AAPLPreviewView.m */,
 				445EAED91DFA666400055615 /* RoundTextField.swift */,
 				445EAEDB1DFA6F7900055615 /* RoundButton.swift */,
+				445EAEE71DFD1F6100055615 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -142,6 +151,14 @@
 				445EAEE31DFBCCC200055615 /* DataService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		445EAEE91DFD255E00055615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				445EAEEA1DFD256C00055615 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E5DE04BB79E83EB572CA50B5 /* Frameworks */ = {
@@ -283,9 +300,12 @@
 				445EAEB41DF8E67300055615 /* CameraVC.swift in Sources */,
 				445EAEDE1DFA7F1800055615 /* LoginVC.swift in Sources */,
 				445EAEB21DF8E67300055615 /* AppDelegate.swift in Sources */,
+				445EAEE61DFD1DE400055615 /* UsersVC.swift in Sources */,
 				445EAEDA1DFA666400055615 /* RoundTextField.swift in Sources */,
 				445EAED51DF8EC9600055615 /* AAPLPreviewView.m in Sources */,
+				445EAEEB1DFD256C00055615 /* User.swift in Sources */,
 				445EAED41DF8EC9600055615 /* AAPLCameraViewController.m in Sources */,
+				445EAEE81DFD1F6100055615 /* UserCell.swift in Sources */,
 				445EAEE11DFAB9D300055615 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
