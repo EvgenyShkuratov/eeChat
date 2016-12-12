@@ -108,12 +108,13 @@ class UsersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     print("Error uploading video: \(err?.localizedDescription)")
                 } else {
                     let downloadURL = meta?.downloadURL()
-                    DataService.instance.sendMediaPullRequest(senderUID: (FIRAuth.auth()?.currentUser!.uid)!, sendingTo: self.selectedUser, mediaURL: downloadURL!, TextSnipped: "Needs to have some UI for this feature..")
+                    DataService.instance.sendMediaPullRequest(senderUID: (FIRAuth.auth()?.currentUser!.uid)!, sendingTo: self.selectedUser, mediaURL: downloadURL!)
                     print("DownloadURL: \(downloadURL)")
                     // save this somewhere
                 }
             })
             self.dismiss(animated: true, completion: nil)
+            
         } else if let snap = _snapData {
             let imageName = "\(NSUUID().uuidString).jpg)"
             let ref = DataService.instance.imagesStorageRef.child(imageName)

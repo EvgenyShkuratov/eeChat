@@ -27,8 +27,8 @@ class DataService {
     }
     
     func saveUser(uid: String) {
-        let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
-        mainRef.child("Users").child(uid).child("Profile").setValue(profile)
+        let profile: Dictionary<String, AnyObject> = ["firstName": "Evgeny" as AnyObject, "lastName": "S" as AnyObject]
+        mainRef.child("users").child(uid).child("profile").setValue(profile)
     }
     
     var mainStorageRef: FIRStorageReference {
@@ -45,7 +45,13 @@ class DataService {
     
     func sendMediaPullRequest(senderUID: String, sendingTo: Dictionary<String, User>, mediaURL: URL, TextSnipped: String? = nil) {
         
-        let pr: Dictionary<String, AnyObject> = ["mediaURL":mediaURL.absoluteString as AnyObject, "userID":senderUID as AnyObject, "openCount":0 as AnyObject, "recipients":sendingTo.keys as AnyObject]
+        
+        var uids = [String]()
+        for uid in sendingTo.keys {
+            uids.append(uid)
+        }
+        
+        let pr: Dictionary<String, AnyObject> = ["mediaURL":mediaURL.absoluteString as AnyObject, "userID":senderUID as AnyObject, "openCount":0 as AnyObject, "recipients":uids as AnyObject]
         mainRef.child("pullRequsts").childByAutoId().setValue(pr)
     }
     
