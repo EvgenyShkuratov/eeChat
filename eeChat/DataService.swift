@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase
+import FirebaseStorage
 
 class DataService {
     
@@ -29,6 +30,25 @@ class DataService {
         let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
         mainRef.child("Users").child(uid).child("Profile").setValue(profile)
     }
+    
+    var mainStorageRef: FIRStorageReference {
+        return FIRStorage.storage().reference()
+    }
+    
+    var imagesStorageRef: FIRStorageReference {
+        return mainStorageRef.child("images")
+    }
+    
+    var videoStorageRef: FIRStorageReference {
+        return mainStorageRef.child("videos")
+    }
+    
+    func sendMediaPullRequest(senderUID: String, sendingTo: Dictionary<String, User>, mediaURL: URL, TextSnipped: String? = nil) {
+        
+        let pr: Dictionary<String, AnyObject> = ["mediaURL":mediaURL.absoluteString as AnyObject, "userID":senderUID as AnyObject, "openCount":0 as AnyObject, "recipients":sendingTo.keys as AnyObject]
+        mainRef.child("pullRequsts").childByAutoId().setValue(pr)
+    }
+    
     
     
     
